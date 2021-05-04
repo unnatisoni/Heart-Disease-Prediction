@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+element.style {
+    
+}
+        body{
+            background-color: rgb(20, 24, 24);
+            
+            background-repeat: no-repeat;
+            background-size:cover;
+            font-weight: bold;
+            font-size: large;
+    
+        } 
+        .bgeff{
+            align-items: center;
+            margin:20px 200px;
+            color:rgb(235, 235, 238);
+            background-color: rgb(95, 87, 77);
+            background-image: url('http://st1.thehealthsite.com/wp-content/uploads/2018/02/heart-failure-655x353.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            border:2px solid white;
+            padding-left: 700px;
+            padding-right: 10px;
+            padding-bottom: 5px;
+            padding-top: 25px;
+            margin-top: 30px;
+        
+        }
+        h1{
+            color: cornsilk;
+            margin: 10px 400px;
+            margin-top: 30px;
+        }
+        input{
+            margin: 2px 2px;
+            padding-right: 100px;
+            background-color: rgb(189, 212, 255);
+        }
+        button{
+            margin: 30px 100px;
+            
+           
+
+        }
+        .btn:hover{
+            color: rgb(201, 220, 221);
+            background-color: rgb(77, 77, 253);
+        }
+        
+        .pred{
+            margin-left: 800px;
+            color: darkgrey;
+            font-size:x-large;
+        }
+   
+    </style>
+
+</head>
+<body>
+    <h1>HEART DISEASE PREDICTION </h1>
+    <div class="bgeff">
+    <form action="/results" method="POST"><table>
+        <tr><th><label for="Age">Age</th><th> <input type="number" name="Age"></th></tr>
+        <tr><th><label for="Sex"> Sex </th><th><input type="'number" name="Sex"></th></tr>
+        <tr><th><label for="CP">CP </th><th><input type="number" name="CP"></th></tr>
+        <tr><th><label for="TRESTBPS">TRESTBPS</th><th> <input type="number" name="TRESTBPS"></th></tr>
+        <tr><th><label for="CHOL">CHOL</th><th><input type="number" name="CHOL"></th></tr>
+        <tr><th><label for="FPS">FPS </th><th><input type="number" name="FPS"></th></tr>
+         <tr><th><label for="RESTECG">  RESTECG </th><th> <input type="number" name="RESTECG"></th></tr>
+        <tr><th><label for="THALACH"> THALACH </th><th> <input type="number" name="THALACH"></th></tr>
+        <tr><th><label for="EXANG"> EXANG </th><th> <input type="number" name="EXANG"></th></tr>
+        <tr><th><label for="OLDPEAK"> OLDPEAK </th><th> <input type="number" name="OLDPEAK"></th></tr>
+        <tr><th><label for="Slope"> Slope </th><th> <input type="number" name="Slope"></th></tr>
+        <tr><th><label for="CA"> CA</th><th> <input type="number" name="CA"></th></tr>
+        <tr><th><label for="THAL"> THAL </th><th> <input type="number" name="THAL"></th></tr>
+    </table>
+
+        <button type="submit">SUBMIT</button>
+
+        </form>
+
+</div>
+<div class="pred">
+    {{prediction}}</div>
+</body>
+</html>
+
